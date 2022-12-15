@@ -25,8 +25,9 @@ if __name__ == '__main__':
         d2 = p1.distance(p3)
         d3 = p2.distance(p3)
         if d1 + d2 > d3 and d1 + d3 > d2 and d2 + d3 > d1:
-            p = d1 + d2 + d3
-            p = format(p, ".3f")
+            p = math.sqrt((d1 + d2 + d3) * (d1 + d2 - d3) * (-d1 + d2 + d3) * (d1 - d2 + d3))
+            p /= 4
+            p = format(p, ".2f")
             print(p)
         else:
             print("INVALID")

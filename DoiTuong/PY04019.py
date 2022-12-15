@@ -1,6 +1,6 @@
 class Tuyen:
     def __init__(self, ma, ten, diemLT, diemTH):
-        self.ma = "TS{:02d}".format(ma)
+        self.ma = "TS0{:01d}".format(ma)
         self.ten = ten
         self.diemTB = (diemTH + diemLT) / 2
         self.xepLoai = ''

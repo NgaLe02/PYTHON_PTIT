@@ -36,7 +36,7 @@ class HoaDon:
 n = int(input())
 a = []
 for i in range(n):
-    a.append(HoaDon(i + 1, input(), input(), input(), input(), int(input())))
+    a.append(HoaDon(i + 1, input().strip(), input().strip(), input().strip(), input().strip(), int(input())))
     a[i]._set_so_ngay_o()
     a[i]._set_thanh_tien()
 
